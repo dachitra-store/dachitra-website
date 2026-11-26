@@ -5,9 +5,10 @@ const waNumber = "918847054678";
 function renderProducts(products) {
   const visibleProducts = products.filter((p) => p.available !== false);
   grid.innerHTML = visibleProducts.map((p) => {
-    const photo = p.image
-      ? `<img src="${p.image}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover;">`
-      : `<span>PRODUCT PHOTO COMING SOON</span>`;
+    const photos = [p.image, ...(Array.isArray(p.gallery) ? p.gallery : [])].filter(Boolean);
+    const photo = photos.length
+      ? `<div class="product-gallery"><div class="product-photo-main"><img data-main-photo src="${photos[0]}" alt="${p.name}"></div>${photos.length > 1 ? `<div class="product-thumbnails">${photos.map((src, i) => `<button type="button" class="product-thumb${i === 0 ? " active" : ""}" data-gallery-src="${src}" aria-label="View product photo ${i + 1}"><img src="${src}" alt=""></button>`).join("")}</div>` : ""}</div>`
+      : `<div class="product-photo"><span>PRODUCT PHOTO COMING SOON</span></div>`;
 
     const details = [
       ["Fabric", p.fabric], ["Craft", p.craft], ["Colour", p.colour],
@@ -35,6 +36,16 @@ function renderProducts(products) {
       </div>
     </article>`;
   }).join("");
+
+  grid.querySelectorAll("[data-gallery-src]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const gallery = button.closest(".product-gallery");
+      const main = gallery.querySelector("[data-main-photo]");
+      main.src = button.dataset.gallerySrc;
+      gallery.querySelectorAll(".product-thumb").forEach((thumb) => thumb.classList.remove("active"));
+      button.classList.add("active");
+    });
+  });
 }
 
 fetch("/data/products.json")
