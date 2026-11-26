@@ -24,6 +24,11 @@ collections:
               - { label: "Price", name: "price", widget: "string", default: "Price on Request" }
               - { label: "Description", name: "description", widget: "text" }
               - { label: "Main product photo", name: "image", widget: "image", required: false }
+              - label: "Additional product photos (up to 4)"
+                name: "gallery"
+                widget: "list"
+                required: false
+                field: { label: "Photo", name: "photo", widget: "image" }
               - { label: "Fabric", name: "fabric", widget: "string", required: false }
               - { label: "Craft", name: "craft", widget: "string", required: false }
               - { label: "Colour", name: "colour", widget: "string", required: false }
