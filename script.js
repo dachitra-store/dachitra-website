@@ -1,4 +1,4 @@
-// DACHITRA PRODUCT CATALOGUE
+// DACHITRA PRODUCT CATALOGUE — content is managed through /admin/
 const grid = document.getElementById("product-grid");
 const waNumber = "918847054678";
 
@@ -8,6 +8,16 @@ function renderProducts(products) {
     const photo = p.image
       ? `<img src="${p.image}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover;">`
       : `<span>PRODUCT PHOTO COMING SOON</span>`;
+
+    const details = [
+      ["Fabric", p.fabric], ["Craft", p.craft], ["Colour", p.colour],
+      ["Dye", p.dye], ["Saree Length", p.saree_length],
+      ["Blouse Piece", p.blouse_piece], ["Wash Care", p.wash_care]
+    ].filter((item) => item[1]);
+
+    const detailHtml = details.length
+      ? `<details class="product-details"><summary>View product details</summary><dl>${details.map(([label, value]) => `<div><dt>${label}</dt><dd>${value}</dd></div>`).join("")}</dl></details>`
+      : "";
 
     const msg = encodeURIComponent(
       `Hello DACHITRA, I am interested in ${p.name}. Please share details.`
@@ -19,6 +29,7 @@ function renderProducts(products) {
         <p>${p.category || ""}</p>
         <h3>${p.name || "DACHITRA Saree"}</h3>
         <p>${p.description || ""}</p>
+        ${detailHtml}
         <div class="product-price">${p.price || "Price on Request"}</div>
         <a class="product-order" href="https://wa.me/${waNumber}?text=${msg}" target="_blank" rel="noopener">Enquire on WhatsApp</a>
       </div>
