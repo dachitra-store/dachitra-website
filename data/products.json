@@ -1,67 +1,18 @@
 {
   "products": [
     {
-      "name": "Saree Collection 01",
-      "category": "Handcrafted Saree",
+      "name": "Neel Gaj – Hand Block Printed Pure Maheshwari Silk Saree",
+      "category": "Pure Maheshwari Silk · Hand Block Printed",
       "price": "Price on Request",
-      "description": "An elegant handcrafted saree from DACHITRA.",
+      "description": "A beautiful blend of traditional artistry and timeless elegance. Delicate ivory floral motifs on a rich royal blue base, complemented by intricate geometric patterns, traditional elephant motifs and botanical detailing on the statement pallu. Contrasting borders complete this elegant Maheshwari silk saree.",
       "image": "assets/IMG_0274.PNG",
-      "available": true
-    },
-    {
-      "name": "Saree Collection 02",
-      "category": "Traditional Saree",
-      "price": "Price on Request",
-      "description": "A beautiful traditional design celebrating Indian artistry.",
-      "image": "assets/IMG_0275.PNG",
-      "available": true
-    },
-    {
-      "name": "Saree Collection 03",
-      "category": "Artisan Collection",
-      "price": "Price on Request",
-      "description": "A timeless saree inspired by India's textile heritage.",
-      "image": "assets/IMG_0283.PNG",
-      "available": true
-    },
-    {
-      "name": "Saree Collection 04",
-      "category": "Handcrafted Saree",
-      "price": "Price on Request",
-      "description": "Discover the beauty of Indian craftsmanship.",
-      "image": "",
-      "available": true
-    },
-    {
-      "name": "Saree Collection 05",
-      "category": "Silk Collection",
-      "price": "Price on Request",
-      "description": "Elegant ethnic wear for special occasions.",
-      "image": "",
-      "available": true
-    },
-    {
-      "name": "Saree Collection 06",
-      "category": "Cotton Saree",
-      "price": "Price on Request",
-      "description": "Comfort and tradition in one beautiful drape.",
-      "image": "",
-      "available": true
-    },
-    {
-      "name": "Saree Collection 07",
-      "category": "Artisan Collection",
-      "price": "Price on Request",
-      "description": "Celebrating the art of Indian textiles.",
-      "image": "",
-      "available": true
-    },
-    {
-      "name": "Saree Collection 08",
-      "category": "Traditional Saree",
-      "price": "Price on Request",
-      "description": "Rooted in tradition. Inspired by art.",
-      "image": "",
+      "fabric": "100% Pure Maheshwari Silk",
+      "craft": "Handblock Printed",
+      "colour": "Royal Blue & Ivory",
+      "dye": "Natural Colours",
+      "saree_length": "5.5 metres",
+      "blouse_piece": "1 metre (included)",
+      "wash_care": "Dry clean recommended. Store in a cool, dry place away from direct sunlight.",
       "available": true
     }
   ]
