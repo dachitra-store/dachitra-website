@@ -25,3 +25,19 @@
 
 /* Remove the decorative centre/frame line from product photos */
 .product-photo:after{display:none}
+
+
+/* Fix product gallery overflow: keep thumbnails above product text */
+.product-photo:has(.product-gallery){
+  height:auto;
+  min-height:0;
+  padding:0;
+  display:block;
+  background:transparent;
+  overflow:visible;
+}
+.product-photo:has(.product-gallery):after{display:none}
+.product-gallery{display:block;position:relative}
+.product-photo-main{width:100%}
+.product-thumbnails{position:static;margin:10px 0 0}
+.product-info{position:relative;clear:both}
