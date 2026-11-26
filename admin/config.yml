@@ -1,9 +1,7 @@
 backend:
   name: turbo-github
-  # Add the Site ID copied from your Decap Turbo site Overview.
-  turbo_site_id: PASTE_DECAP_TURBO_SITE_ID_HERE
+  turbo_site_id: 953a4e0d-7898-4838-add3-496f32609535
   branch: main
-
 media_folder: "assets/products"
 public_folder: "/assets/products"
 
