@@ -1,0 +1,30 @@
+backend:
+  name: turbo-github
+  # Replace this after creating the DACHITRA site in Decap Turbo.
+  turbo_site_id: PASTE_DECAP_TURBO_SITE_ID_HERE
+  repo: dachitra-store/dachitra-website
+  branch: main
+
+media_folder: "assets/products"
+public_folder: "/assets/products"
+
+collections:
+  - name: "catalogue"
+    label: "DACHITRA Catalogue"
+    files:
+      - name: "products"
+        label: "Products"
+        file: "data/products.json"
+        format: "json"
+        fields:
+          - label: "Product list"
+            name: "products"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.price}}"
+            fields:
+              - { label: "Product name", name: "name", widget: "string" }
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Price", name: "price", widget: "string", default: "Price on Request" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Main product photo", name: "image", widget: "image", required: false }
+              - { label: "Available for enquiry", name: "available", widget: "boolean", default: true }
