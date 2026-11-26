@@ -1,19 +1,19 @@
 {
   "products": [
     {
-      "name": "Neel Gaj – Hand Block Printed Pure Maheshwari Silk Saree",
-      "category": "Pure Maheshwari Silk · Hand Block Printed",
-      "price": "Price on Request",
-      "description": "A beautiful blend of traditional artistry and timeless elegance. Delicate ivory floral motifs on a rich royal blue base, complemented by intricate geometric patterns, traditional elephant motifs and botanical detailing on the statement pallu. Contrasting borders complete this elegant Maheshwari silk saree.",
-      "image": "assets/IMG_0274.PNG",
-      "fabric": "100% Pure Maheshwari Silk",
       "craft": "Handblock Printed",
+      "saree_length": "5.5 metres",
+      "fabric": "100% Pure Maheshwari Silk",
+      "price": "Price on Request",
+      "available": true,
+      "name": "Neel Gaj – Hand Block Printed Pure Maheshwari Silk Saree",
       "colour": "Royal Blue & Ivory",
       "dye": "Natural Colours",
-      "saree_length": "5.5 metres",
-      "blouse_piece": "1 metre (included)",
       "wash_care": "Dry clean recommended. Store in a cool, dry place away from direct sunlight.",
-      "available": true
+      "blouse_piece": "1 metre (included)",
+      "image": "/assets/products/img_0283.png",
+      "description": "A beautiful blend of traditional artistry and timeless elegance. Delicate ivory floral motifs on a rich royal blue base, complemented by intricate geometric patterns, traditional elephant motifs and botanical detailing on the statement pallu. Contrasting borders complete this elegant Maheshwari silk saree.",
+      "category": "Pure Maheshwari Silk · Hand Block Printed"
     }
   ]
 }
