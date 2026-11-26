@@ -1,0 +1,68 @@
+{
+  "products": [
+    {
+      "name": "Saree Collection 01",
+      "category": "Handcrafted Saree",
+      "price": "Price on Request",
+      "description": "An elegant handcrafted saree from DACHITRA.",
+      "image": "assets/IMG_0274.PNG",
+      "available": true
+    },
+    {
+      "name": "Saree Collection 02",
+      "category": "Traditional Saree",
+      "price": "Price on Request",
+      "description": "A beautiful traditional design celebrating Indian artistry.",
+      "image": "assets/IMG_0275.PNG",
+      "available": true
+    },
+    {
+      "name": "Saree Collection 03",
+      "category": "Artisan Collection",
+      "price": "Price on Request",
+      "description": "A timeless saree inspired by India's textile heritage.",
+      "image": "assets/IMG_0283.PNG",
+      "available": true
+    },
+    {
+      "name": "Saree Collection 04",
+      "category": "Handcrafted Saree",
+      "price": "Price on Request",
+      "description": "Discover the beauty of Indian craftsmanship.",
+      "image": "",
+      "available": true
+    },
+    {
+      "name": "Saree Collection 05",
+      "category": "Silk Collection",
+      "price": "Price on Request",
+      "description": "Elegant ethnic wear for special occasions.",
+      "image": "",
+      "available": true
+    },
+    {
+      "name": "Saree Collection 06",
+      "category": "Cotton Saree",
+      "price": "Price on Request",
+      "description": "Comfort and tradition in one beautiful drape.",
+      "image": "",
+      "available": true
+    },
+    {
+      "name": "Saree Collection 07",
+      "category": "Artisan Collection",
+      "price": "Price on Request",
+      "description": "Celebrating the art of Indian textiles.",
+      "image": "",
+      "available": true
+    },
+    {
+      "name": "Saree Collection 08",
+      "category": "Traditional Saree",
+      "price": "Price on Request",
+      "description": "Rooted in tradition. Inspired by art.",
+      "image": "",
+      "available": true
+    }
+  ]
+}
