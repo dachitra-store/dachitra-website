@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DACHITRA celebrates India's textile heritage through thoughtfully curated handcrafted sarees.">
+  <title>DACHITRA | Rooted in Tradition. Inspired by Art.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">A celebration of Indian craftsmanship · Pan-India shipping</div>
+  <header class="site-header">
+    <a class="brand-logo" href="#" aria-label="DACHITRA home"><img src="assets/dachitra-logo.jpeg" alt="DACHITRA — Rooted in Tradition, Crafted with Art"></a>
+    <button class="menu-toggle" aria-label="Open menu" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
+    <nav class="nav">
+      <a href="#collections">Collections</a>
+      <a href="#story">Our Story</a>
+      <a href="#craft">Our Craft</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="#shop">Explore the collection <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE ART OF INDIAN TRADITION</p>
+        <h1>Stories woven<br><em>into every drape.</em></h1>
+        <p class="hero-text">Discover thoughtfully curated sarees inspired by India's rich textile heritage, artistry and timeless elegance.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#shop">Shop the collection</a>
+          <a class="text-link" href="#story">Discover DACHITRA <span>→</span></a>
+        </div>
+        <div class="hero-note"><span class="sun-symbol">✳</span> Rooted in tradition. Inspired by art.</div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-image image-placeholder">
+          <span class="image-label">YOUR HERO SAREE PHOTO</span>
+        </div>
+        <div class="hero-stamp">CRAFTED<br>WITH<br>HERITAGE</div>
+      </div>
+    </section>
+
+    <section class="intro-strip">
+      <span>HANDLOOM</span><i>✳</i><span>HAND PAINTED</span><i>✳</i><span>BLOCK PRINT</span><i>✳</i><span>TIMELESS TEXTILES</span>
+    </section>
+
+    <section class="section collection-section" id="collections">
+      <div class="section-heading">
+        <div><p class="eyebrow">EXPLORE DACHITRA</p><h2>Collections with a story</h2></div>
+        <p>Tradition takes many forms. Find the craft and character that speak to you.</p>
+      </div>
+      <div class="collection-grid">
+        <a class="collection-card collection-one" href="#shop"><div class="collection-photo image-placeholder"><span>ADD HANDLOOM PHOTO</span></div><div class="collection-caption"><span>01 / TIMELESS WEAVES</span><h3>Handloom Sarees</h3><b>Explore →</b></div></a>
+        <a class="collection-card collection-two" href="#shop"><div class="collection-photo image-placeholder"><span>ADD BLOCK PRINT PHOTO</span></div><div class="collection-caption"><span>02 / ARTISAN PRINTS</span><h3>Block Printed</h3><b>Explore →</b></div></a>
+        <a class="collection-card collection-three" href="#shop"><div class="collection-photo image-placeholder"><span>ADD HAND PAINTED PHOTO</span></div><div class="collection-caption"><span>03 / ART IN EVERY STROKE</span><h3>Hand Painted</h3><b>Explore →</b></div></a>
+      </div>
+    </section>
+
+    <section class="section shop-section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">A CURATED SELECTION</p><h2>Discover the collection</h2></div>
+        <p>Each piece has its own story. Ask us about availability, details and styling.</p>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+      <p class="edit-note">To change products, prices and descriptions, edit the <strong>products</strong> list in <code>script.js</code>.</p>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-image image-placeholder"><span>ADD AN ARTISAN / TEXTILE DETAIL PHOTO</span></div>
+      <div class="story-copy">
+        <p class="eyebrow">THE DACHITRA STORY</p>
+        <h2>Honouring the hands behind the heritage.</h2>
+        <p>DACHITRA is a celebration of India's textile traditions — the colours, techniques, details and stories passed down through generations.</p>
+        <p>We bring together thoughtfully selected sarees that connect the beauty of traditional craft with the way we dress today.</p>
+        <a class="text-link" href="#contact">Get to know us <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="craft-section" id="craft">
+      <p class="eyebrow">MORE THAN A SAREE</p>
+      <h2>Made memorable by the details.</h2>
+      <div class="craft-points">
+        <div><span>✳</span><h3>Indian craft</h3><p>Inspired by the diversity of India's textile heritage.</p></div>
+        <div><span>✳</span><h3>Thoughtful curation</h3><p>Collections selected for their character, colour and detail.</p></div>
+        <div><span>✳</span><h3>Personal assistance</h3><p>Connect with us for product details before you order.</p></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2>Find a drape that feels like you.</h2>
+      <p>Have a question about a saree, its fabric or availability? We'd love to help.</p>
+      <a class="button button-light" href="https://wa.me/918847054678?text=Hello%20DACHITRA%2C%20I%20would%20like%20to%20know%20more%20about%20your%20saree%20collection." target="_blank" rel="noopener">Chat with us on WhatsApp</a>
+      <a class="contact-email" href="mailto:hello@dachitra.in">hello@dachitra.in</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand-logo footer-brand-logo" href="#"><img src="assets/dachitra-logo.jpeg" alt="DACHITRA — Rooted in Tradition, Crafted with Art"></a>
+    <p>Rooted in Tradition. Inspired by Art.</p>
+    <div class="footer-links"><a href="#shop">Shop</a><a href="#story">Our Story</a><a href="https://wa.me/918847054678" target="_blank" rel="noopener">WhatsApp</a><a href="mailto:hello@dachitra.in">Email</a></div>
+    <small>© <span id="year"></span> DACHITRA. All rights reserved.</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
