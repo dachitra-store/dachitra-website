@@ -1,8 +1,7 @@
 backend:
   name: turbo-github
-  # Replace this after creating the DACHITRA site in Decap Turbo.
+  # Add the Site ID copied from your Decap Turbo site Overview.
   turbo_site_id: PASTE_DECAP_TURBO_SITE_ID_HERE
-  repo: dachitra-store/dachitra-website
   branch: main
 
 media_folder: "assets/products"
@@ -27,4 +26,11 @@ collections:
               - { label: "Price", name: "price", widget: "string", default: "Price on Request" }
               - { label: "Description", name: "description", widget: "text" }
               - { label: "Main product photo", name: "image", widget: "image", required: false }
+              - { label: "Fabric", name: "fabric", widget: "string", required: false }
+              - { label: "Craft", name: "craft", widget: "string", required: false }
+              - { label: "Colour", name: "colour", widget: "string", required: false }
+              - { label: "Dye", name: "dye", widget: "string", required: false }
+              - { label: "Saree length", name: "saree_length", widget: "string", required: false }
+              - { label: "Blouse piece", name: "blouse_piece", widget: "string", required: false }
+              - { label: "Wash care", name: "wash_care", widget: "text", required: false }
               - { label: "Available for enquiry", name: "available", widget: "boolean", default: true }
