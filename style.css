@@ -21,3 +21,7 @@
 .product-thumb img{width:100%;height:100%;object-fit:cover;display:block}
 @media(max-width:850px){.product-photo-main{height:280px}}
 @media(max-width:600px){.product-photo-main{height:220px}.product-thumb{width:48px;height:58px}}
+
+
+/* Remove the decorative centre/frame line from product photos */
+.product-photo:after{display:none}
