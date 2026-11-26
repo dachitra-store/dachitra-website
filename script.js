@@ -25,7 +25,7 @@ function renderProducts(products) {
     );
 
     return `<article class="product-card">
-      <div class="product-photo${photos.length ? " product-photo-has-gallery" : ""}">${photo}</div>
+      ${photos.length ? photo.replace('class="product-gallery"', 'class="product-gallery product-gallery-card"') : photo}
       <div class="product-info">
         <p>${p.category || ""}</p>
         <h3>${p.name || "DACHITRA Saree"}</h3>
